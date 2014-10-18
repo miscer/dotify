@@ -1,0 +1,3 @@
+<div class="dot-test">
+  {{! it.message }}
+</div>

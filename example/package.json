@@ -1,0 +1,12 @@
+{
+  "name": "dotify-example",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "compile": "browserify -t dotify -o output.js entry.js"
+  },
+  "devDependencies": {
+    "browserify": "^6.1.0",
+    "dotify": "^0.0.1"
+  }
+}
