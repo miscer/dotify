@@ -1,0 +1,19 @@
+{
+  "name": "dotify",
+  "version": "0.0.1",
+  "description": "Browserify transform plugin for doT.js",
+  "author": "Michal Miskernik <michal@miskernik.sk>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miscer/dotify"
+  },
+  "keywords": [
+    "browserify-plugin"
+  ],
+  "license": "MIT",
+  "main": "./dotify.js",
+  "dependencies": {
+    "dot": "^1.0.2",
+    "through": "^2.3.6"
+  }
+}
