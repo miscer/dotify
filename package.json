@@ -13,7 +13,7 @@
   "license": "MIT",
   "main": "./dotify.js",
   "dependencies": {
-    "dot": "^1.0.2",
+    "dot": "^1.0.3",
     "through": "^2.3.6"
   }
 }
