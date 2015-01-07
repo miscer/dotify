@@ -1,6 +1,6 @@
 {
   "name": "dotify",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Browserify transform plugin for doT.js",
   "author": "Michal Miskernik <michal@miskernik.sk>",
   "repository": {
