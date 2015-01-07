@@ -21,6 +21,11 @@ Then compile the scripts:
 
 `$ browserify -t dotify main.js`
 
+You can also pass options to the doT.js compiler, for example to preserve
+whitespace:
+
+`$ browserify -t [ dotify --no-strip ] main.js`
+
 ## License
 
 MIT
