@@ -1,15 +1,17 @@
 var dot = require('dot');
 var through = require('through');
+var merge = require('merge');
 
 function isDot(file) {
   return /\.dot$/.test(file);
 }
 
-function compile(data) {
-  return 'module.exports = ' + dot.template(data);
+function compile(data, opts) {
+  opts = merge(true, dot.templateSettings, opts);
+  return 'module.exports = ' + dot.template(data, opts);
 }
 
-module.exports = function(file) {
+module.exports = function(file, opts) {
   if (!isDot(file)) return through();
 
   var data = '';
@@ -23,7 +25,7 @@ module.exports = function(file) {
     var src;
 
     try {
-      src = compile(data);
+      src = compile(data, opts);
     } catch (error) {
       this.emit('error', error);
     }
