@@ -7,6 +7,6 @@
   },
   "devDependencies": {
     "browserify": "^6.1.0",
-    "dotify": "^1.0.0"
+    "dotify": "^1.1.0"
   }
 }
